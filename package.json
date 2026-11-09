@@ -1,0 +1,20 @@
+{
+  "name": "practica-fibonacci-pin-tdd-adriana",
+  "version": "1.0.0",
+  "description": "Práctica de tdd con node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "test_watch": "vitest"
+  },
+  "keywords": [],
+  "author": "Adriana de Paz Rovira",
+  "license":"ISC",
+  "type": "module",
+  "devDependencies": {
+    "vitest": "^5.1.0"
+  },
+  "dependencies": {
+    "chalk": "^6.0.1"
+  }
+}
