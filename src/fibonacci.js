@@ -1,34 +1,19 @@
 
 
-//Función fibonacci
-function fibonacci(n){
-    if(n < 0){
-        throw new RangeError("solo números enteros >= 0");
-    }
-
-    if(n === 0){
-        return 0;
-    }
-
-    if(n === 1){
-        return 1;
+// Función Fibonacci
+function fibonacci(n) {
+    if (!Number.isInteger(n) || n < 0) {
+        throw new RangeError("El número debe ser un entero >= 0");
     }
 
     let anterior = 0;
     let actual = 1;
-    
 
-    for(let i = 2; i <= n; i++){
-
-            let temp = actual;
-            actual += anterior;
-            anterior = temp;
-     
-        
+    for (let i = 0; i < n; i++) {
+        [anterior, actual] = [actual, anterior + actual];
     }
-    return actual;
+
+    return anterior;
 }
 
-export{
-    fibonacci
-};
+export { fibonacci };
